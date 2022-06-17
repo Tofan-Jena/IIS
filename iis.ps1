@@ -1,5 +1,4 @@
 Install-WindowsFeature -name Web-Server -IncludeAllSubFeature -IncludeManagementTools
-Install-Module -Name 'IISAdministration'
 New-Item -ItemType Directory -Name 'MyWebsite' -Path 'C:\'
 New-Item -ItemType File -Name 'index.html' -Path 'C:\MyWebsite\'
 New-IISSite -Name 'MyWebsite' -PhysicalPath 'C:\MyWebsite\' -BindingInformation "*:8088:"
